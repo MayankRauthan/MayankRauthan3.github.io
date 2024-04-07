@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="style.css">
+    <script src="javascript.js"></script>
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="portfolio">Welcome</a>
+        <nav class="navbar">
+        <a href="#" class="active">Home</a>
+        <a href="#">About</a>
+        <a href="#">Form</a>
+        <a href="#">Career</a>
+        <a href="#">Contact</a>
+        </nav>
+    </header>
+    <div class="partition">
+    </div>
+    <div class="front_page">
+        <div class="Textblock">
+            <div id="text1">Hello,</div>
+            <div id="text2">I'm Mayank Rauthan</div>
+            <div id="text3">Student At Graphic Era Hill University</div>
+            <div id="text4"></div>
+        </div>
+        <div class="learning">
+            <img src="learning.svg" alt="learning" class="img">
+        </div>
+    </div>
+    <div class="lower_body">
+        <div class="center">
+            <h1>Enter Your Details</h1><br>
+        </div>
+        <div class="form_div">
+            <form  onsubmit="return Validate()">
+                <label for="username"><b>Name</b></label><br>
+                <input type="text" id="username" placeholder="Enter your name"><br><br>
+                <label for="pass"><b>Password</b></label><br>
+                <input type="password" id="pass" placeholder="Enter Password"><br><br>
+                <label><b>Gender </b> <input type="radio" value="Male" id="Male" name="gender">Male  <input type="radio" value="Female" id="Female" name="gender">Female</label><br>
+                <br><br>
+                <label >Choose Your Preffered Programming Language</label>
+                <ol id ="checkboxes">
+                    <li> <input type="checkbox" value="C">C</li>
+                    <li> <input type="checkbox" value="C++">C++</li>
+                    <li> <input type="checkbox" value="java">Java</li>
+                    <li> <input type="checkbox" value="python">Python</li>
+                </ol>
+                <label for="Subject">Choose Your Favourite Subject</label><br><br>
+                <select id="Subject">
+                    <option value="OS" selected>OS</option>
+                    <option value="DSA">DSA</option>
+                    <option value="Compiler Design">Compiler Design</option>
+                </select><br><br>
+                <button onclick ="onsubmit"class="submitbtn">Submit</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
